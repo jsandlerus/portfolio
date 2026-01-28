@@ -1,6 +1,4 @@
 import React, { useEffect, useState, Children, cloneElement, useCallback } from "react";
-import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import GitHubIcon from "@mui/icons-material/GitHub";
 
 export const CarouselItem = ({children, width, img}) =>{
   return (
@@ -9,7 +7,7 @@ export const CarouselItem = ({children, width, img}) =>{
 }
 
 const Carousel = ({ props, children } ) => {
-  const {github, viewLink, name } = props
+  const { name } = props
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = useCallback((newIndex) => {
@@ -36,14 +34,6 @@ useEffect(()=>{
 
   return (
     <div className="carousel" >
-        <div className="carousel-links">
-        {github !==  undefined ? <a href={github} target="_blank" rel="noreferrer noopener">
-            <GitHubIcon />
-          </a> : null}
-          {viewLink !==  undefined ? <a href={viewLink} target="_blank" rel="noreferrer noopener">
-            <OpenInNewIcon />
-          </a> : null}
-        </div> 
         <div className="inner"
         style={{transform: `translateX(-${activeIndex * 100}%)`}}>
           {Children.map(children, (child, index)=>{

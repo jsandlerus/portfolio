@@ -2,8 +2,10 @@ import React, {useEffect, useState} from 'react';
 import { useSpeechSynthesis } from "react-speech-kit";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import VolumeOffIcon from "@mui/icons-material/VolumeOff";
+import LaunchIcon from "@mui/icons-material/Launch";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import WorkIcon from "@mui/icons-material/Work";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Carousel, {CarouselItem} from "./Carousel";
 import { useSelector} from "react-redux";
 import {isMobile} from 'react-device-detect';
@@ -24,8 +26,6 @@ const ProjectDisplay = ({ display }) => {
     // onEnd,
   });
   const {images, github, viewLink} = currentDisplay
-  const voice = voices[11];
-  const text = "Hello, this is a test";
 
   const getParent = () =>{
     return flatDataFlow.map(item => {return(item.name === lastCrumb ? item.items : null)})
@@ -42,31 +42,74 @@ const ProjectDisplay = ({ display }) => {
     else setCurrentDisplay(parent[0][0])
   };
 
+  // Format name for display (remove \n)
+  const displayName = currentDisplay.name ? currentDisplay.name.replace(/\n/g, ' ') : '';
+
   return (
     <div className="infoWindow-wrapper">
-      <Carousel props ={{images, github, viewLink, name:currentDisplay.name}}>
-      {images.map(img => <CarouselItem img={img} alt={img} key={img}/>)}
-      </Carousel>
-      {currentDisplay.role && (
-        <div className="infoWindow-role-period">
-          <span className="infoWindow-role">{currentDisplay.role}</span>
-          {currentDisplay.period && <span className="infoWindow-period">{currentDisplay.period}</span>}
+      {/* Project/Company Header */}
+      <div className="infoWindow-header">
+        <h2 className="infoWindow-title">{displayName}</h2>
+        <div className="infoWindow-header-links">
+          {viewLink && (
+            <a href={viewLink} target="_blank" rel="noopener noreferrer" className="infoWindow-link" title="View Live">
+              <LaunchIcon />
+            </a>
+          )}
+          {github && (
+            <a href={github} target="_blank" rel="noopener noreferrer" className="infoWindow-link" title="View Code">
+              <GitHubIcon />
+            </a>
+          )}
+        </div>
+      </div>
+
+      {/* Role & Period Badge */}
+      {(currentDisplay.role || currentDisplay.period) && (
+        <div className="infoWindow-meta">
+          {currentDisplay.role && (
+            <div className="infoWindow-meta-item">
+              <WorkIcon />
+              <span>{currentDisplay.role}</span>
+            </div>
+          )}
+          {currentDisplay.period && (
+            <div className="infoWindow-meta-item">
+              <CalendarTodayIcon />
+              <span>{currentDisplay.period}</span>
+            </div>
+          )}
         </div>
       )}
-      {currentDisplay.techStack !== undefined ? <div className="infoWindow-techStack">
-        {currentDisplay.techStack.map((tech) => (
-          <img src={tech} alt={tech} key={tech}/>
-        ))}
-      </div> : null}
-      <div className="infoWindow-description">
-        {/* {!supported ? <VolumeOffIcon /> : null}
-        {supported && speaking ? (
-          <VolumeOffIcon onClick={() => speak({ text, voice })} />
-        ) : (
-          <VolumeUpIcon onClick={() => cancel} />
-        )} */}
-        {currentDisplay.description}
+
+      {/* Content with Image and Description */}
+      <div className="infoWindow-content">
+        {/* Image Carousel - floated left */}
+        <div className="infoWindow-carousel-float">
+          <Carousel props ={{images, github, viewLink, name:currentDisplay.name}}>
+            {images.map(img => <CarouselItem img={img} alt={img} key={img}/>)}
+          </Carousel>
+        </div>
+
+        {/* Description */}
+        <div className="infoWindow-description">
+          {currentDisplay.description}
+        </div>
       </div>
+
+      {/* Tech Stack - at bottom with frosting effect */}
+      {currentDisplay.techStack !== undefined ? (
+        <div className="infoWindow-techStack-wrapper infoWindow-techStack-frosted">
+          <div className="infoWindow-techStack-label">Tech Stack</div>
+          <div className="infoWindow-techStack">
+            {currentDisplay.techStack.map((tech) => (
+              <img src={tech} alt={tech} key={tech}/>
+            ))}
+          </div>
+        </div>
+      ) : null}
+
+      {/* Navigation Buttons */}
       <div className={isMobile ? "infoWindow-button_mobile" : "infoWindow-button"}>
         <div onClick={() => updateDisplay('previous')}>
           <ArrowBackIcon/>

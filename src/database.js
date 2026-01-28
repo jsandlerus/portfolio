@@ -19,6 +19,7 @@ import wholesaleAccount from "./resources/Projects/wholesale-account.png";
 import wholesaleLogin from "./resources/Projects/wholesale-login.png";
 
 import armada from "./resources/Logos/armada-logo.png";
+import alefCar from "./resources/Logos/alef car.jpg";
 import ECSITE from "./resources/Logos/ECSite-logo.png";
 import simple from "./resources/Logos/simplebreakthrough-logo.png";
 
@@ -93,7 +94,7 @@ export const dataFlow = [
             role: "Frontend Lead Developer",
             period: "04/2021 - 09/2021",
             description: "Core Web Developer for a Flying Car's Software at Armada Aeronautics (Alef) in Santa Clara, CA. Designed and Developed an Offline Flight Software Application in 2 months, in a cross-functional team of 8 people.\n\nThe software controls a sensor-driven multi-camera positional system and a 3D Navigation System. Also developed a Live Diagnostic Dashboard with a Custom Alert System that managed hundreds of live data points from the motors of the vehicle.\n\nRestructured the back-end architecture for a crash-survivable Black Box recovery system. It became the backbone for data analysis after a flight, allowing 100% data recovery after a crash.\n\nI also had the opportunity to develop the first version of the Manual Hardware Control of the Vehicle, like the steering wheel and gearbox. I was honored to present the advances of our technology at a private investors event of the company, helping to achieve one of the several seed rounds.",
-            images: [armada],
+            images: [armada, alefCar],
           },
         ],
       },
@@ -137,7 +138,7 @@ export const dataFlow = [
             ],
             viewLink: "https://nv-zero.ai",
             period: "06/2023 - Current",
-            description: "NV-Zero is an Autonomous voice-first AI Agent that manages data and syncs with 2800+ app integrations. It leverages a dynamic UI that is powered by the decisions of the AI.\n\nIt uses State of the Art Futuristic UI (FUI) all powered by Zero Engine, a breakthrough in function calling, allowing better performance, accuracy, and 100x speed than common techniques.\n\nTech Stack: TypeScript, React, Tailwind, AWS S3, Figma, ElasticSearch, NextJS.",
+            description: "NV-Zero is an Autonomous voice-first AI Agent that manages data and syncs with 2800+ app integrations. It leverages a dynamic UI that is powered by the decisions of the AI, creating a seamless human-computer interaction experience.\n\nThe platform features Zero Engine, a breakthrough in function calling technology that enables better performance, accuracy, and 100x speed compared to common techniques. Users can interact naturally through voice commands to manage their data, automate workflows, and connect their favorite applications.\n\nNV-Zero showcases a State of the Art Futuristic UI (FUI) design that adapts in real-time based on AI decisions, providing an intuitive and visually stunning experience. The system intelligently routes requests, handles complex multi-step tasks, and provides instant feedback through its responsive interface.",
             images: [portfolioHome],
           },
           {

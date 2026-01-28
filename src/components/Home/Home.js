@@ -8,6 +8,7 @@ import Fog from "../Decorations/Fog";
 import InfoWindow from "../InfoWindow/InfoWindow";
 import BreadCrumbs from "./BreadCrumbs";
 import MusicPlay from "./MusicPlay";
+import HandcraftedBadge from "./HandcraftedBadge";
 // import ClickAwayListener from "@mui/base/ClickAwayListener";
 import LoadPage from '../Landing/LoadPage';
 import {isMobile} from 'react-device-detect';
@@ -108,6 +109,7 @@ const Home = () => {
             <div className="forest-trees"/>
             <TurbulentWater setIsWindowOpen={() => setIsWindowOpen(false)}/>
             <Fog position={"front"}/>
+            <HandcraftedBadge />
             <div className="logo">
               <PieDisplay
                 updateDisplay={(e) => updateDisplay(e)}

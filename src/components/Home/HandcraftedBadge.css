@@ -1,0 +1,208 @@
+.handcrafted-badge {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: var(--white);
+    z-index: 50;
+    max-width: 320px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 255, 255, 0.05) inset;
+    animation: floatIn 1s ease-out;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    transition: all 0.3s ease;
+}
+
+.handcrafted-badge:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4),
+                0 0 30px rgba(255, 255, 255, 0.1) inset;
+}
+
+.handcrafted-badge.expanded {
+    max-width: 360px;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.handcrafted-badge-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+}
+
+.handcrafted-icon {
+    color: #64ffda;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.handcrafted-title {
+    font-size: 0.95em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.handcrafted-close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.handcrafted-close:hover {
+    opacity: 1;
+}
+
+.handcrafted-close svg {
+    width: 18px;
+    height: 18px;
+}
+
+.handcrafted-hint {
+    font-size: 0.75em;
+    opacity: 0.5;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.handcrafted-content {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    animation: expandIn 0.3s ease-out;
+}
+
+@keyframes expandIn {
+    0% {
+        opacity: 0;
+        max-height: 0;
+    }
+    100% {
+        opacity: 1;
+        max-height: 400px;
+    }
+}
+
+.handcrafted-year {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9em;
+    color: #ffd700;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.handcrafted-year svg {
+    width: 18px;
+    height: 18px;
+}
+
+.handcrafted-description {
+    font-size: 0.85em;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+    opacity: 0.9;
+}
+
+.handcrafted-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.handcrafted-list li {
+    font-size: 0.8em;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.handcrafted-list li:last-child {
+    border-bottom: none;
+}
+
+.handcrafted-list li::before {
+    content: "▸";
+    color: #64ffda;
+    font-size: 0.9em;
+}
+
+.handcrafted-feature {
+    color: #64ffda;
+    font-weight: 500;
+    min-width: 100px;
+}
+
+.handcrafted-footer {
+    font-size: 0.75em;
+    text-align: center;
+    opacity: 0.7;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    line-height: 1.6;
+}
+
+.handcrafted-note {
+    font-size: 0.9em;
+    color: #64ffda;
+}
+
+/* Mobile Styles */
+@media (max-width: 599px) {
+    .handcrafted-badge {
+        left: 10px;
+        bottom: 70px;
+        right: 10px;
+        max-width: calc(100% - 20px);
+        padding: 10px 14px;
+    }
+
+    .handcrafted-badge.expanded {
+        max-width: calc(100% - 20px);
+    }
+
+    .handcrafted-title {
+        font-size: 0.85em;
+    }
+
+    .handcrafted-feature {
+        min-width: 80px;
+    }
+}
+
+@media (max-width: 400px) {
+    .handcrafted-badge {
+        bottom: 80px;
+    }
+}
