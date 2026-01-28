@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.883bf5d7.css",
-    "main.js": "/portfolio/static/js/main.9b9a134c.js",
+    "main.css": "/portfolio/static/css/main.eb0d5670.css",
+    "main.js": "/portfolio/static/js/main.df365895.js",
     "static/media/frozen-heart.mp3": "/portfolio/static/media/frozen-heart.2007786921335934bba8.mp3",
     "static/media/tides.mp3": "/portfolio/static/media/tides.083a34d9d0b8bfdec8e6.mp3",
     "static/media/adventure-is-calling.mp3": "/portfolio/static/media/adventure-is-calling.ecce8ad5585a4c82cb0c.mp3",
@@ -14,6 +14,7 @@
     "static/media/fog1.png": "/portfolio/static/media/fog1.40a60868e73aa0cec5ac.png",
     "static/media/fog2.png": "/portfolio/static/media/fog2.3165186ae3ef0175d387.png",
     "static/media/gifme-home.png": "/portfolio/static/media/gifme-home.0ce6cab79cbf2c4dfe08.png",
+    "static/media/alef car.jpg": "/portfolio/static/media/alef car.ac5be326f4d0ac443114.jpg",
     "static/media/black-forest-trees.png": "/portfolio/static/media/black-forest-trees.7e70e2cc11be3160a3b9.png",
     "static/media/birds.mp3": "/portfolio/static/media/birds.58ea819699ebfdc7aa99.mp3",
     "static/media/crickets.mp3": "/portfolio/static/media/crickets.b502c9afc572cbc947d2.mp3",
@@ -39,11 +40,11 @@
     "static/media/redux-logo.png": "/portfolio/static/media/redux-logo.ef1019743b7295e63264.png",
     "static/media/mui-logo.png": "/portfolio/static/media/mui-logo.4abf87351ee913f4080a.png",
     "index.html": "/portfolio/index.html",
-    "main.883bf5d7.css.map": "/portfolio/static/css/main.883bf5d7.css.map",
-    "main.9b9a134c.js.map": "/portfolio/static/js/main.9b9a134c.js.map"
+    "main.eb0d5670.css.map": "/portfolio/static/css/main.eb0d5670.css.map",
+    "main.df365895.js.map": "/portfolio/static/js/main.df365895.js.map"
   },
   "entrypoints": [
-    "static/css/main.883bf5d7.css",
-    "static/js/main.9b9a134c.js"
+    "static/css/main.eb0d5670.css",
+    "static/js/main.df365895.js"
   ]
 }
