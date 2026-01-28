@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.eb0d5670.css",
-    "main.js": "/portfolio/static/js/main.df365895.js",
+    "main.js": "/portfolio/static/js/main.6973e0dd.js",
     "static/media/frozen-heart.mp3": "/portfolio/static/media/frozen-heart.2007786921335934bba8.mp3",
     "static/media/tides.mp3": "/portfolio/static/media/tides.083a34d9d0b8bfdec8e6.mp3",
     "static/media/adventure-is-calling.mp3": "/portfolio/static/media/adventure-is-calling.ecce8ad5585a4c82cb0c.mp3",
@@ -37,14 +37,15 @@
     "static/media/simplebreakthrough-logo.png": "/portfolio/static/media/simplebreakthrough-logo.a99aed91f814508feffc.png",
     "static/media/ECSite-logo.png": "/portfolio/static/media/ECSite-logo.abc51ecf1598138d87bb.png",
     "static/media/zephyrsquad-logo.png": "/portfolio/static/media/zephyrsquad-logo.bd7f211d5e7a74304b7e.png",
+    "static/media/nv zero logo full Icon.png": "/portfolio/static/media/nv zero logo full Icon.f85ca4c2900ae63e4be0.png",
     "static/media/redux-logo.png": "/portfolio/static/media/redux-logo.ef1019743b7295e63264.png",
     "static/media/mui-logo.png": "/portfolio/static/media/mui-logo.4abf87351ee913f4080a.png",
     "index.html": "/portfolio/index.html",
     "main.eb0d5670.css.map": "/portfolio/static/css/main.eb0d5670.css.map",
-    "main.df365895.js.map": "/portfolio/static/js/main.df365895.js.map"
+    "main.6973e0dd.js.map": "/portfolio/static/js/main.6973e0dd.js.map"
   },
   "entrypoints": [
     "static/css/main.eb0d5670.css",
-    "static/js/main.df365895.js"
+    "static/js/main.6973e0dd.js"
   ]
 }
