@@ -61,6 +61,27 @@
 }
 
 
+.infoWindow-role-period {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    border-left: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.infoWindow-role {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.infoWindow-period {
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .infoWindow-techStack {
     display: flex;
     flex-wrap: wrap;
@@ -603,6 +624,17 @@ height: 100%; */
     margin: 8px 8px 8px 0; */
 }
 
+.about-subtitle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+}
+
 .about-description {
     font-size: 1.1em;
     text-align: justify;
@@ -610,6 +642,30 @@ height: 100%; */
     font-family: "Helvetica", 'Arial';
     white-space: pre-wrap;
     line-height: 1.3;
+}
+
+.about-education {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+.about-education-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.about-education-item {
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.about-education-period {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 

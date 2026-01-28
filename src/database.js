@@ -60,10 +60,12 @@ export const dataFlow = [
           {
             name: "ECSITE",
             techStack: [
-              javascript, css3, react, redux, python, flask, selenium, appium, jira, zephyrsquad, amazons3, json
+              javascript, css3, react, redux, python, flask, selenium, appium, jira, postman, amazons3, mongodb, expressjs
             ],
             viewLink: "https://ecsiteapp.com/",
-            description: "ECSITE is an innovative high-grow Cloud-based company disrupting the Construction and Wireless Telecom Infrastructure sectors leading into 5G and beyond. As Quality Assurance Engineer, I had the opportunity to design and build an Agnostic Automation Test Framework using technologies like AWS S3 services, React, Flask, Python, and JavaScript.\n\nEvery day this tool automates over 1000 test cases across Web browsers, Windows Xamarin Apps, and Android and iOS Applications, improving the performance and efficiency of multiple teams greatly. Made completely dynamic and scalable, its simple user interface allows to create and run a new test case in less than a minute.\n\nI have also been crucial in the design of new platforms as well as improving existing ones. Thanks to my background in programming, I was able to bring very technical requirements from the dev team into functional, easy-to-use UIs that even the general public can use.\n\nNevertheless, my primary focus has been the development of one of our major SAAS Apps in our Agile environment. This product currently has 3000 daily customer data entry points with an expected growth of over 10,000 a day. Finally, I’m currently working to expand productivity for one of our services by designing a feature that provides the same functionality 4 to 8 times faster.",
+            role: "Full Stack Lead AI Developer",
+            period: "08/2021 - Current",
+            description: "As Full Stack Lead AI Developer at ECSITE in Santa Clara, CA, I created an AI Data Retrieval Application for Q&A using Vector Database that answers questions using private documents. Also developed a Dynamic SQL Generation powered by AI that automatically generates SQL queries out of natural language, then runs them, fetches the data and displays them in the form of graphs.\n\nDeveloped an AI Multi-Agent Management System that, given a user's question, makes dynamic on-demand requests to any number of agents.\n\nI have also been crucial in the design of new platforms as well as improving existing ones. Thanks to my background in programming, I was able to bring very technical requirements from the dev team into functional, easy-to-use UIs that even the general public can use.\n\nTech Stack: JavaScript, React, Redux, Python, Flask, Selenium, Appium, Jira, Postman, AWS S3, CSS, Figma, ElasticSearch, MongoDB, Express, Tailwind.",
             images: [ECSITE],
           },
           {
@@ -83,12 +85,14 @@ export const dataFlow = [
             images: [simple],
           },
           {
-            name: "Armada",
+            name: "Armada\n(Alef)",
             techStack: [
               javascript, nodejs, html5, css3, bootstrap, jquery, socketio, git
             ],
             viewLink: "http://armadaaero.com",
-            description: "Armada Aeronautics is a 21st-century transportation company disrupting air travel with new modes of transportation. Armada develops a 0-carbon solution for modern aviation with innovations in software and hardware.\n\nAs a Front-End Engineer and Lead Developer, my work at Armada allows me to lead the development of their first internal flight system. By using technologies like JavaScript, jQuery, and Socketio I was able to develop the Flying Control User Interface for Pilots, the Developers Diagnostic View of Engines, and the crash-survivable Blackbox recovery system of the vehicle.\n\nI also had the opportunity to develop the first version of the Manual Hardware Control of the Vehicle, like the stirring wheel and gearbox. I was honored to present the advances of our technology at a private investors event of the company, helping to achieve one of the several seed rounds.",
+            role: "Frontend Lead Developer",
+            period: "04/2021 - 09/2021",
+            description: "Core Web Developer for a Flying Car's Software at Armada Aeronautics (Alef) in Santa Clara, CA. Designed and Developed an Offline Flight Software Application in 2 months, in a cross-functional team of 8 people.\n\nThe software controls a sensor-driven multi-camera positional system and a 3D Navigation System. Also developed a Live Diagnostic Dashboard with a Custom Alert System that managed hundreds of live data points from the motors of the vehicle.\n\nRestructured the back-end architecture for a crash-survivable Black Box recovery system. It became the backbone for data analysis after a flight, allowing 100% data recovery after a crash.\n\nI also had the opportunity to develop the first version of the Manual Hardware Control of the Vehicle, like the steering wheel and gearbox. I was honored to present the advances of our technology at a private investors event of the company, helping to achieve one of the several seed rounds.",
             images: [armada],
           },
         ],
@@ -110,17 +114,32 @@ export const dataFlow = [
       {
         name: "About",
         image: JonathanImage,
-        description: "Hi! My name is Jonathan Sandler and I’m a Full Stack Software Engineer based in San Francisco, United States. My main area of expertise is Front-End development focused on User Experience and Creative Development.\n\nI found my passion for technology and communication 4 years ago, after attending 42 Silicon Valley Bootcamp. Since then, I had the pleasure of working with talented people who had empowered me throughout my career.\n\nI get excited at solving complex problems and love creating unique user experiences through cutting-edge technology with all my heart! I can’t describe how thankful I am for being part of this incredible community of developers in such amazing times of innovation.\n\nI feel privileged to have the chance to learn something new every day and I look forward to continuing to share all the incredible skills this career has brought to my life. I believe coding is an essential part of humanity and it's the fuel of the new era. We have a chance to change the Status Quo together.\n\nAside from coding, I'm a passionate Ayurveda enthusiast. I received my training in ayurvedic massage and ayurvedic cookery in Quebec, Canada at the Sri Sri Ayurveda Institute. I opened two private Ayurvedic Centers in Latin America and I also traveled around the globe promoting Ayurveda. In June 2017, I was honored by the Embassy of India in Panama as the speaker for Ayurveda on International Yoga day.",
-        techStack: [{name:"Languages", tech:[ javascript, html5, css3, c, python, java]},
-        {name:"Frameworks & Libraries", tech:[redux, react, expressjs, jquery, socketio, flask,nodejs, mui, bootstrap]},
-        {name:"Databases/Industry Tools", tech:[git, github, mongodb, amazons3, json]},
-        {name:"Tools/Software", tech:[postman, jira, zephyrsquad, selenium, appium]}
+        title: "Full-Stack AI Software Developer",
+        description: "Hi! My name is Jonathan Sandler and I'm a Full-Stack AI Software Developer based in San Jose, California. My main area of expertise is AI-powered applications, Front-End development focused on User Experience, and Creative Development.\n\nI found my passion for technology and communication after attending 42 Silicon Valley Bootcamp (08/2019 - 03/2020). I continued my education at University of the People, earning my Bachelor's Degree in Computer Science (06/2020 - 12/2024). Since then, I had the pleasure of working with talented people who have empowered me throughout my career.\n\nI get excited at solving complex problems and love creating unique user experiences through cutting-edge technology with all my heart! I can't describe how thankful I am for being part of this incredible community of developers in such amazing times of AI innovation.\n\nI feel privileged to have the chance to learn something new every day and I look forward to continuing to share all the incredible skills this career has brought to my life. I believe coding is an essential part of humanity and it's the fuel of the new era. We have a chance to change the Status Quo together.\n\nAside from coding, I'm a passionate Ayurveda enthusiast. I received my training in ayurvedic massage and ayurvedic cookery in Quebec, Canada at the Sri Sri Ayurveda Institute. I opened two private Ayurvedic Centers in Latin America and I also traveled around the globe promoting Ayurveda. In June 2017, I was honored by the Embassy of India in Panama as the speaker for Ayurveda on International Yoga day.",
+        techStack: [{name:"Languages", tech:[ javascript, html5, css3, c, python, nextjs]},
+        {name:"Frameworks & Libraries", tech:[redux, react, expressjs, jquery, socketio, flask, nodejs, nextjs, mui, bootstrap]},
+        {name:"Databases/Industry Tools", tech:[git, github, mongodb, amazons3]},
+        {name:"Tools/Software", tech:[postman, jira, selenium, appium]}
+        ],
+        education: [
+          {name: "42 Silicon Valley", location: "Fremont, CA", description: "Accelerated software engineering peer-to-peer learning environment Bootcamp program.", period: "08/2019 - 03/2020"},
+          {name: "University of the People", location: "US", description: "Bachelor's Degree in Computer Science.", period: "06/2020 - 12/2024"}
         ],
         github: "https://github.com/jsandlerus",
       },
       {
         name: "Projects",
         items: [
+          {
+            name: "NV-Zero",
+            techStack: [
+              react, redux, amazons3, nextjs
+            ],
+            viewLink: "https://nv-zero.ai",
+            period: "06/2023 - Current",
+            description: "NV-Zero is an Autonomous voice-first AI Agent that manages data and syncs with 2800+ app integrations. It leverages a dynamic UI that is powered by the decisions of the AI.\n\nIt uses State of the Art Futuristic UI (FUI) all powered by Zero Engine, a breakthrough in function calling, allowing better performance, accuracy, and 100x speed than common techniques.\n\nTech Stack: TypeScript, React, Tailwind, AWS S3, Figma, ElasticSearch, NextJS.",
+            images: [portfolioHome],
+          },
           {
             name: "My Ayurveda\nclinic",
             techStack: [
@@ -169,7 +188,7 @@ export const dataFlow = [
             ],
             viewLink: "http://jsandlerus.github.io/wholesale-portal",
             description:
-              "CBDDY E-commerce is an international wholesale platform for selling top-shelf, lab-tested hemp products. It provides a very clean and simple user-friendly experience for customers, featuring category filtering, and a review rating system for products. Customers can “like” products and have them displayed as part of their personalized Home Page.\n\nCBDDY also provides a product management system for administrators only. Users can create, edit, update, and soft or hard delete products from the products database system. The E-commerce platform also provides a product featuring page with carousel images, a product star review system, description, and add-to shopping cart action buttons. Lastly, the platform enjoys a secure checkout system using GoCardless API and an account management system for payment methods and email preferences.\n\nThe technologies used for this project were React + Redux (Front-end), NodeJS + ExpressJS (Back-end), OAuth2.0, HTTPS, and GoCardless API (security), MongoDB (Database), and JavaScript as language.",
+              "CBDDY E-commerce is an international wholesale platform for selling top-shelf, lab-tested hemp products. It provides a very clean and simple user-friendly experience for customers, featuring category filtering, and a review rating system for products. Customers can 'like' products and have them displayed as part of their personalized Home Page.\n\nCBDDY also provides a product management system for administrators only. Users can create, edit, update, and soft or hard delete products from the products database system. The E-commerce platform also provides a product featuring page with carousel images, a product star review system, description, and add-to shopping cart action buttons. Lastly, the platform enjoys a secure checkout system using GoCardless API and an account management system for payment methods and email preferences.\n\nThe technologies used for this project were React + Redux (Front-end), NodeJS + ExpressJS (Back-end), OAuth2.0, HTTPS, and GoCardless API (security), MongoDB (Database), and JavaScript as language.",
             github: "https://github.com/jsandlerus/wholesale-portal",
             images: [wholesaleLogin, wholesaleAccount],
           },
@@ -183,6 +202,6 @@ export const testimonials = [
   {
     name: "Brent Smith\nSenior Software Engineer",
     review:
-      "“Jonathan would be a great addition to any team. His drive to improve himself, the team, and the company is an asset that pays huge dividends. His ability to pair design and coding skills together is exactly what you want in a frontend developer.”",
+      "Jonathan would be a great addition to any team. His drive to improve himself, the team, and the company is an asset that pays huge dividends. His ability to pair design and coding skills together is exactly what you want in a frontend developer.",
   },
 ];

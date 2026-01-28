@@ -24,7 +24,20 @@ const AboutDisplay = ({ display }) => {
         <VolumeUpIcon onClick={() => cancel} />
       )} */}
       <div className="about-title"> About</div>
+      {display.title && <div className="about-subtitle">{display.title}</div>}
       <div className="about-description">{display.description}</div>
+        {display.education && (
+          <div className="about-education">
+            <div className="about-education-title">Education:</div>
+            {display.education.map((edu) => (
+              <div key={edu.name} className="about-education-item">
+                <strong>{edu.name}</strong> - {edu.location}<br/>
+                <span>{edu.description}</span><br/>
+                <span className="about-education-period">{edu.period}</span>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="infoWindow-techStack-resume-container">
         <a href={resume} download="JonathanSandlerResume.pdf" className="about-resume">Download my Resume <DownloadIcon/></a>
         </div>

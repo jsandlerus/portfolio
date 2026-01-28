@@ -8,7 +8,6 @@ import Testimonials from "./testimonials";
 import { send } from "emailjs-com";
 
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const ContactDisplay = ({ display }) => {
   const [inputs, setInputs] = useState({});
@@ -124,18 +123,18 @@ const ContactDisplay = ({ display }) => {
           {phone}
         </div>
         <div className="contact-info__social">
-          <Link to={github}>
+          <a href={github} target="_blank" rel="noopener noreferrer">
             <GitHubIcon />
-          </Link>
-          <Link to={linkedin}>
+          </a>
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
             <LinkedInIcon />
-          </Link>
-          <Link to={facebook}>
+          </a>
+          <a href={facebook} target="_blank" rel="noopener noreferrer">
             <FacebookIcon />
-          </Link>
-          <Link to={twitter}>
+          </a>
+          <a href={twitter} target="_blank" rel="noopener noreferrer">
             <TwitterIcon />
-          </Link>
+          </a>
         </div>
       </div>
       <Testimonials/>

@@ -47,7 +47,13 @@ const ProjectDisplay = ({ display }) => {
       <Carousel props ={{images, github, viewLink, name:currentDisplay.name}}>
       {images.map(img => <CarouselItem img={img} alt={img} key={img}/>)}
       </Carousel>
-            {currentDisplay.techStack !== undefined ? <div className="infoWindow-techStack">
+      {currentDisplay.role && (
+        <div className="infoWindow-role-period">
+          <span className="infoWindow-role">{currentDisplay.role}</span>
+          {currentDisplay.period && <span className="infoWindow-period">{currentDisplay.period}</span>}
+        </div>
+      )}
+      {currentDisplay.techStack !== undefined ? <div className="infoWindow-techStack">
         {currentDisplay.techStack.map((tech) => (
           <img src={tech} alt={tech} key={tech}/>
         ))}
