@@ -1,5 +1,5 @@
 {
-  "homepage": "http://jsandlerus.github.io/",
+  "homepage": "https://jsandlerus.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -11,8 +11,6 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.0",
     "emailjs-com": "^3.2.0",
-    "node": "^17.7.2",
-    "nodemon": "^2.0.16",
     "react": "^18.1",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.1",
